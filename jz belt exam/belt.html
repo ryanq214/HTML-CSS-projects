@@ -20,13 +20,54 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script type="text/javascript">
 
+      // function changeImage1(){
+      //       var img = document.getElementById("im");
+      //       // img.src= this();
+      //       // img.src=  ( $(this).data("myval") ) ;
+      //       // img.src= "pic/Man_Relaxing_on_Dock_resize.jpeg";
+      //       img.src= "pic/o-RELAXATION-GENE-RESPONSE-facebook.jpeg";
+      //       //  x.getAttribute("data-myval");
+      //       return false;
+      //     };
+      //
+      // function changeImage2(){
+      //       var img = document.getElementById("im");
+      //       img.src= "pic/18843258-Young-businesswoman-relaxing-in-office-Stock-Photo-desk-woman.jpeg";
+      //       return false;
+      //     };
+      //
+      // function changeImage3(){
+      //       var img = document.getElementById("im");
+      //       img.src= "pic/923398315-boyfriend-arm-lawn-girlfriend.jpeg";
+      //       return false;
+      //     };
+      //
+      // function changeImage4(){
+      //       var img = document.getElementById("im");
+      //       img.src= "pic/Man_Relaxing_on_Dock_resize.jpeg";
+      //       return false;
+      //     };
+
       $(document).ready(function(){
         // alert("shi");
 
         $("#top-page").click(function(){
           document.body.scrollTop = 0; // For Chrome, Safari and Opera
           document.documentElement.scrollTop = 0; // For IE and Firefox
-        })
+        });
+
+        // function changeImage(){
+        //       var img = document.getElementById("#im");
+        //       img.src="pic/logo.png";
+        //       return false;
+        //     };
+
+        // $(".cli").click(changeImage(  $(this).val() ) );
+          $('span').click(function(){
+        $("#im").attr('src', $(this).attr("data-myval") );
+      });
+
+
 
       });
 
@@ -45,18 +86,40 @@
     <nav class="first-nav group">
 
       <ul>
-        <li>  <a href="w"> Home</a> </li>
-        <li>  <a href="w"> Short Codes</a>  </li>
-        <li>  <a href="w"> Blog</a>  </li>
-        <li>  <a href="w"> Portfolio</a> </li>
-        <li>  <a href="w"> Features</a>  </li>
-        <li>  <a href="w"> Contact</a> </li>
+        <li>  <a href="#"> Home</a> </li>
+        <li>  <a href="#"> Short Codes</a>  </li>
+        <li>  <a href="#"> Blog</a>  </li>
+        <li>  <a href="#"> Portfolio</a> </li>
+        <li>  <a href="#"> Features</a>  </li>
+        <li>  <a href="#"> Contact</a> </li>
       </ul>
 
     </nav>      <!-- first navigation section end-->
 
+    <div class="pict">
 
-    <img src="pic/main_pic.png" class="mainp" alt="Main Picture Here">
+
+      <img id="im" src="pic/o-RELAXATION-GENE-RESPONSE-facebook.jpeg" class="mainp" alt="Main Picture Here" d>
+
+      <figure class="clickme">
+
+      <span   data-myval= "pic/o-RELAXATION-GENE-RESPONSE-facebook.jpeg" > ● </span>
+      <!-- onclick="changeImage1()" -->
+
+      <span   data-myval="pic/18843258-Young-businesswoman-relaxing-in-office-Stock-Photo-desk-woman.jpeg"> ● </span>
+
+      <span   data-myval="pic/923398315-boyfriend-arm-lawn-girlfriend.jpeg" > ●</span>
+
+      <span   data-myval="pic/Man_Relaxing_on_Dock_resize.jpeg" > ● </span>
+
+      <!-- ° ● -->
+
+    </figure >
+
+
+    </div>
+
+
 
     <nav class="sec-nav">
 
