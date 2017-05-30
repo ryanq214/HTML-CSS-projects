@@ -59,13 +59,32 @@ header h3{
 
 
 /******************************************
-  main picture
+  main picture / pictures
 ******************************************/
 
 .mainp{
   width: 100%;
-
 }
+
+.pict{
+  position: relative;
+}
+
+
+.clickme{
+  font-size: 1.3em;
+  /*float: left;*/
+  position: absolute;
+  /*margin-top: -30px;*/
+  bottom: -5px;
+  left: 10px;
+  color: black;
+}
+
+.clickme span:hover{
+  cursor: pointer; cursor: hand;
+}
+
 
 
 
@@ -306,6 +325,12 @@ header h3{
     content: none;
   }
 
+
+  .clickme{
+    font-size: 1.7em;
+
+  }
+
   /******************************************
     second navigation section
   ******************************************/
@@ -356,6 +381,11 @@ header h3{
   }
 
 
+
+  .clickme{
+    font-size: 2.5em;
+
+  }
   /******************************************
     second navigation section
   ******************************************/
